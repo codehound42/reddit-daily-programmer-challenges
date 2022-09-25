@@ -23,9 +23,9 @@ let rec numcompareAux combined =
             let yVal = Map.find y numeralToValue
 
             if (xVal > yVal) then
-                1
-            elif xVal < yVal then
                 -1
+            elif xVal < yVal then
+                1
             else
                 numcompareAux tail
         with
